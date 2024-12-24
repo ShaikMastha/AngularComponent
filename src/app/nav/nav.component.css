@@ -1,0 +1,34 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Align site name and menu on opposite sides */
+    align-items: center; /* Vertically align items */
+    padding: 10px 20px; /* Add some spacing inside the navbar */
+    background-color: #007bff; /* Light blue background */
+    color: white; /* White text color */
+  }
+  
+  /* Site name styling */
+  .site-name h2 {
+    margin: 0; /* Remove extra margin */
+    font-size: 20px; /* Simple font size */
+  }
+  
+  /* Menu styling */
+  .site-menu {
+    display: flex;
+    gap: 15px; /* Space between menu items */
+  }
+  
+  /* Menu links */
+  .site-menu a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  /* Hover effect */
+  .site-menu a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

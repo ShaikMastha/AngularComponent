@@ -1,0 +1,57 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-products',
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.css']
+})
+export class ProductsComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+products =[
+ 
+    {
+      id: 1,
+      name: "Tesla Model S",
+      price: 79999,
+      color: "Red",
+      available: "Available",
+      imageUrl: "https://images.hindustantimes.com/auto/img/2023/04/08/600x338/Tesla_Model_S_1678375094091_1680954187989_1680954187989.jpeg"
+    },
+    {
+      id: 2,
+      name: "Lamborghini",
+      price: 147500,
+      color: "Blue",
+      available: "Not Available",
+      imageUrl: "https://imgd.aeplcdn.com/227x128/n/cw/ec/182149/urus-se-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80"
+    },
+    {
+      id: 3,
+      name: "Audi R8",
+      price: 169900,
+      color: "White",
+      available: "Available",
+      imageUrl: "https://imgd.aeplcdn.com/227x128/n/cw/ec/124141/a8-l-exterior-right-front-three-quarter-4.jpeg?isig=0&q=80"
+    },
+    {
+      id: 4,
+      name: "Mercedes-Benz S-Class",
+      price: 111900,
+      color: "Black",
+      available: "Not Available",
+      imageUrl: "data:image/jpeg;base64,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"
+    },
+    {
+      id: 5,
+      name: "Porsche Taycan",
+      price: 82000,
+      color: "Silver",
+      available: "Available",
+      imageUrl: "https://files.porsche.com/filestore/image/multimedia/none/j1-2nd-taycan-modelimage-sideshot/thumbwhite/aed841db-c117-11ee-8116-005056bbdc38;sL;twebp/porsche-thumbwhite.webp"
+    }
+  ];
+  }

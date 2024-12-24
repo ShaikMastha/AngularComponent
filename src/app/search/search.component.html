@@ -1,0 +1,10 @@
+<button type="button">Search</button>
+<input type="text" placeholder="Search"  (input)="changeSearchValue($event)"/>
+<span *ngIf="searchValue !=''">You searched for " {{searchValue}} "</span>
+<br />
+
+<!-- Two way data binding -->
+<input type="text" [(ngModel)]="searchId">
+<span>You searched for " {{searchId}} "</span><br />
+
+
